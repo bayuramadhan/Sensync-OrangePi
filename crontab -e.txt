@@ -1,0 +1,3 @@
+
+@reboot /home/admin/run.sh > /home/admin/crontab/cron.log
+*/10 * * * * /home/admin/run.sh > /home/admin/crontab/cron.log
