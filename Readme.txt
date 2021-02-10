@@ -1,8 +1,10 @@
 Tutorial Menginstall OrangePi:
 1. sudo apt-get update
 2. sudo apt-get upgrade
+
+Install Pyhton2 dan pip
 3. sudo apt-get install python
-4. curl https://bootstrap.pypa.io/2.7/get-pip.py | sudo python (install pip)
+4. curl https://bootstrap.pypa.io/2.7/get-pip.py | sudo python
 
 Install FTP
 5. sudo apt-get install vsftpd
