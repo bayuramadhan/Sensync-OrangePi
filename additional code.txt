@@ -1,1 +1,2 @@
-
+1. open serial monitor command line:  screen /dev/ttyS1 9600
+2. kill screen: screen -X -S 2258 quit --> 2258 adalah screen number, bisa pake nama
