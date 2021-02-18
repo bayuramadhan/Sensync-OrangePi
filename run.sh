@@ -8,7 +8,7 @@ else
  echo "Program is not running"
  echo "Restart program.."
  #sudo mount /dev/sda1 /media/fd & mount /dev/sdb1 /media/fd & 
- screen -dmS SensyncBase python /home/admin/monitor.py
+ echo 'makanminggu12' | sudo -S screen -dmS SensyncBase python /home/admin/monitor.py
  echo " "
  screen -ls
  echo " "
