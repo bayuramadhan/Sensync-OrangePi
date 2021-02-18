@@ -22,10 +22,3 @@ Install Web server
 15. sudo systemctl restart apache2
 
 Add mysql account
-
-
-
-
-
-
-1. chmod +x /home/admin/run.sh
