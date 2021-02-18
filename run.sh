@@ -12,6 +12,6 @@ else
  echo " "
  screen -ls
  echo " "
- echo "Use 'screen -r SensyncBase' to view active screen"
+ echo "Use 'sudo screen -r SensyncBase' to view active screen"
  #echo "or run script view_prog -> './view_prog.sh'"
 fi
