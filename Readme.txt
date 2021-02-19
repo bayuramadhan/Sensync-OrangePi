@@ -15,6 +15,11 @@ Install Web server
 8. sudo apt-get install php
 9. sudo apt-get install php-mysql
 10. sudo apt-get install mysql-server
+    --> sudo mysql_secure_installation
+    --> yes
+    --> password strong 0
+    --> input password 'makanminggu12'
+    --> yes terus sampai beres
 11. sudo apt-get install libapache2-mod-php
 12. sudo apt-get install phpmyadmin
 13. sudo chown admin /var/www/html
