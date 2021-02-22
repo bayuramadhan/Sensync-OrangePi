@@ -11,19 +11,23 @@ Install FTP
 6. sudo nano /etc/vsftpd.conf, uncomment write_enable=YES
 
 Install Web server
-7. sudo apt-get install apache2
-8. sudo apt-get install php
-9. sudo apt-get install php-mysql
-10. sudo apt-get install mysql-server
-    --> sudo mysql_secure_installation
+1. sudo apt-get install apache2
+2. sudo apt-get install mysql-server
+3. sudo apt-get install php libapache2-mod-php php-mysql php-cgi php-curl php-json
+4. sudo apt-get install phpmyadmin
+5. sudo mysql_secure_installation
     --> yes
     --> password strong 0
     --> input password 'makanminggu12'
     --> yes terus sampai beres
-11. sudo apt-get install libapache2-mod-php
-12. sudo apt-get install phpmyadmin
-13. sudo chown admin /var/www/html
-14. ln -s /usr/share/phpmyadmin phpmyadmin
-15. sudo systemctl restart apache2
 
 Add mysql account
+1. sudo mysql -u root -p
+    --> input password 'makanminggu12'
+2. SET GLOBAL validate_password.policy=LOW
+3. CREATE USER 'admin'@'localhost' IDENTIFIED BY 'makanminggu12';
+4. GRANT ALL PRIVILEGES ON * . * TO 'admin'@'localhost';
+5. FLUSH PRIVILEGES;
+exit;
+sudo /etc/init.d/mysql restart
+
