@@ -31,3 +31,13 @@ Add mysql account
 exit;
 sudo /etc/init.d/mysql restart
 
+set timezone --> sudo timedatectl set-timezone Asia/Jakarta
+
+install i2c dan uart
+1. sudo nano /boot/armbianEnv.txt
+    --> tambahkan uart1 uart2 i2c0 i2c1 i2c2 ke baris overlays=usbhost2 usbhost3
+2. sudo nano /etc/modules
+    --> tambahkan i2c-dev
+3. Install sudo apt-get install python-dev i2c-tools.
+
+install pip modules : requests, smbus
