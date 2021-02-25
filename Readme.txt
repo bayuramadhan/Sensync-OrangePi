@@ -40,4 +40,4 @@ install i2c dan uart
     --> tambahkan i2c-dev
 3. Install sudo apt-get install python-dev i2c-tools.
 
-install pip modules : requests, smbus
+install pip modules : requests, smbus, pyserial
