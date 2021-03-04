@@ -8,7 +8,8 @@ curl https://bootstrap.pypa.io/2.7/get-pip.py | sudo python
 
 3. Install FTP
 sudo apt-get install vsftpd
-sudo nano /etc/vsftpd.conf, uncomment write_enable=YES
+sudo nano /etc/vsftpd.conf
+    --> uncomment write_enable=YES
 
 4. Install Web server
 sudo apt-get install apache2
