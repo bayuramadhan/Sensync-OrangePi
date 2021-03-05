@@ -15,3 +15,12 @@
     --> set ipv4.dns 8.8.8.8
     --> save
     --> quit
+8. memasang RTC external ke RTC1 di OrangePi (menggunakan i2c0 dan address 0x68):
+  sudo echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-0/new_device
+9. set NTP:
+  sudo timedatectl set-ntp false
+10. baca tulis rtc1:
+  sudo hwclock -r -f /dev/rtc1
+  sudo hwclock -w -f /dev/rtc1
+11. set system time:
+  sudo timedatectl set-time "2014-11-08 06:40:00"
