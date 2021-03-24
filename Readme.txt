@@ -4,7 +4,8 @@ sudo apt-get upgrade -y
 
 2. Install Pyhton2 dan pip
 sudo apt-get install python -y
-curl https://bootstrap.pypa.io/2.7/get-pip.py | sudo python
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | sudo python
+
 
 3. Install FTP
 sudo apt-get install vsftpd -y
