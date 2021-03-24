@@ -1,9 +1,8 @@
 1. open serial monitor command line -->  screen /dev/ttyS1 9600
 2. kill screen: sudo screen -X -S SensyncBase quit --> 2258 adalah screen number, bisa pake nama
 3. Allow Apache access to the folders and the files:
-  sudo chgrp -R www-data /var/www/html
-  sudo find /var/www/html -type d -exec chmod g+rx {} +
-  sudo find /var/www/html -type f -exec chmod g+r {} +
+  sudo chmod -R 775 /var/www/html/
+  sudo chown -R 775 /var/www/html/
 4. sudo tanpa tunggu password prompt --> echo 'makanminggu12' | sudo -S apt-get update
 5. set timezone --> sudo timedatectl set-timezone Asia/Jakarta
 6. Permission untuk .sh --> chmod +x /home/admin/run.sh
