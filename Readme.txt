@@ -42,4 +42,4 @@ sudo nano /boot/armbianEnv.txt
 sudo nano /etc/modules
     --> tambahkan i2c-dev
 sudo apt-get install python-dev i2c-tools -y
-sudo pip install requests smbus pyserial
+sudo pip install requests smbus pyserial psutil
