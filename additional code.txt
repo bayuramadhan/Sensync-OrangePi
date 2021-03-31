@@ -23,3 +23,7 @@
   sudo hwclock -w -f /dev/rtc1
 11. set system time:
   sudo timedatectl set-time "2014-11-08 06:40:00"
+12. install folder web
+sudo chown admin /var/www/html
+copy folder ke /var/www/html
+sudo chmod -R 775 folder
