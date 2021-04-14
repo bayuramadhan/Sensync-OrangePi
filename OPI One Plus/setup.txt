@@ -1,0 +1,6 @@
+1. buat user admin pas login
+2. untuk auto login:
+sudo nano /etc/lightdm/lightdm.conf
+3. setelah teks [Seat:*], masukkan:
+autologin-user=jp
+autologin-user-timeout=0
