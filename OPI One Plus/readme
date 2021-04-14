@@ -4,3 +4,9 @@ sudo nano /etc/lightdm/lightdm.conf
 3. setelah teks [Seat:*], masukkan:
 autologin-user=jp
 autologin-user-timeout=0
+
+4. install x11vnc
+sudo apt-get install x11vnc net-tools
+x11vnc -storepasswd
+Write password to /home/admin/.vnc/passwd?  [y]/n y
+sudo x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/admin/.vnc/passwd -rfbport 5900 -shared
