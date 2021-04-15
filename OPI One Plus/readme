@@ -10,3 +10,7 @@ sudo apt-get install x11vnc net-tools
 x11vnc -storepasswd
 Write password to /home/admin/.vnc/passwd?  [y]/n y
 sudo x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/admin/.vnc/passwd -rfbport 5900 -shared
+
+5. ganti mysql-server dengan mariadb-server
+6. sebelum install phpmyadmin, lakukan:
+  sudo aptitude -t buster-backports install php-twig
