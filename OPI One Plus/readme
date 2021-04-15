@@ -2,7 +2,7 @@
 2. untuk auto login:
 sudo nano /etc/lightdm/lightdm.conf
 3. setelah teks [Seat:*], masukkan:
-autologin-user=jp
+autologin-user=admin
 autologin-user-timeout=0
 
 4. install x11vnc
@@ -14,3 +14,5 @@ sudo x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/admin/.
 5. ganti mysql-server dengan mariadb-server
 6. sebelum install phpmyadmin, lakukan:
   sudo aptitude -t buster-backports install php-twig -y
+7. install virtual keyboard
+sudo apt-get install florence
