@@ -16,3 +16,13 @@ sudo x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/admin/.
   sudo aptitude -t buster-backports install php-twig -y
 7. install virtual keyboard
 sudo apt-get install florence
+
+DI CRONTAB
+*/1 * * * * /home/admin/stat/stat.sh > /home/admin/crontab/stat.log
+
+DI RC.LOCAL
+sudo x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/admin/.vnc/passwd -rfbport 5901 -shared
+
+DI SESSION AND STARTUP
+chromium http://192.168.8.2/jabarjadi/ --start-fullscreen
+curl localhost/base/startup.php
