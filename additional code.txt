@@ -27,3 +27,7 @@
 sudo chown admin /var/www/html
 copy folder ke /var/www/html
 sudo chmod -R 775 folder
+
+sudo apt-get install xorg lightdm xfce4 tango-icon-theme gnome-icon-theme
+sudo apt-get install tightvncserver thunar-volman udisks2 gvfs
+
